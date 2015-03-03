@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *plantLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currentGDD;
 @property (weak, nonatomic) IBOutlet UILabel *GDDthreshold;
+@property (weak, nonatomic) IBOutlet UILabel *actuallGDD;
 
 @end

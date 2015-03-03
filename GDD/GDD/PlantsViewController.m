@@ -79,6 +79,7 @@ static NSString *serverAddress = @"https://api.forecast.io/forecast/331224fc1ce6
     
     cell.plantLabel.text = self.plants[indexPath.row];
     cell.GDDthreshold.text = self.values[indexPath.row];
+    cell.actuallGDD.text = @"";
     return cell;
 }
 
