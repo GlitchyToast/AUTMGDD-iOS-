@@ -11,6 +11,7 @@
 		83336CF51AA22962001733BC /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83336CF41AA22962001733BC /* TableViewCell.m */; };
 		83336CF71AA22DF8001733BC /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83336CF61AA22DF8001733BC /* CustomCell.xib */; };
 		833627F91A91741D00BBBAF1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833627F81A91741D00BBBAF1 /* CoreLocation.framework */; };
+		834CACA71AC9D06F00E6CD90 /* historicalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 834CACA61AC9D06F00E6CD90 /* historicalData.plist */; };
 		838F55081A78144700BA469C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 838F55071A78144700BA469C /* main.m */; };
 		838F550B1A78144700BA469C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 838F550A1A78144700BA469C /* AppDelegate.m */; };
 		838F550E1A78144700BA469C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838F550D1A78144700BA469C /* ViewController.m */; };
@@ -38,6 +39,7 @@
 		83336CF41AA22962001733BC /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		83336CF61AA22DF8001733BC /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		833627F81A91741D00BBBAF1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		834CACA61AC9D06F00E6CD90 /* historicalData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = historicalData.plist; sourceTree = "<group>"; };
 		838F55021A78144700BA469C /* GDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838F55061A78144700BA469C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838F55071A78144700BA469C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				83336CF61AA22DF8001733BC /* CustomCell.xib */,
 				838F55061A78144700BA469C /* Info.plist */,
 				838F55071A78144700BA469C /* main.m */,
+				834CACA61AC9D06F00E6CD90 /* historicalData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				83336CF71AA22DF8001733BC /* CustomCell.xib in Resources */,
 				838F55111A78144700BA469C /* Main.storyboard in Resources */,
 				838F55161A78144700BA469C /* LaunchScreen.xib in Resources */,
+				834CACA71AC9D06F00E6CD90 /* historicalData.plist in Resources */,
 				838F55131A78144700BA469C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
