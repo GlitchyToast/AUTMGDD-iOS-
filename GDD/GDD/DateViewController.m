@@ -28,7 +28,7 @@
     [currentComponents setSecond:0];
     NSDate *jan = [calendar dateFromComponents:currentComponents];
     [self.startDate setDate:jan];
-    
+    self.view.backgroundColor = [UIColor colorWithRed:0/256.0 green:220/256.0 blue:255/256.0 alpha:1];
     
     // Do any additional setup after loading the view.
 }
@@ -43,6 +43,7 @@
 {
     if([[segue identifier] isEqualToString:@"toPlantCells"] )
     {
+        
         NSInteger startUnix = [self.startDate.date timeIntervalSince1970];
         NSInteger endUnix = [self.endDate.date timeIntervalSince1970];
         PlantsViewController *plantView = (PlantsViewController *)[segue destinationViewController];
@@ -50,17 +51,13 @@
         plantView.endUnix = endUnix;
         plantView.lat = self.lat;
         plantView.lon = self.lon;
-        //plantView.zip = self.zip;
     }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
 }
-*/
+
+
 
 @end

@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:255.0/256 green:153.0/256 blue:51.0/256 alpha:1];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -56,6 +58,9 @@
     }];
 }
 
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([[segue identifier] isEqualToString:@"toDate"] )
@@ -65,6 +70,8 @@
         dateView.lon = self.lon;
         //dateView.zip = self.zipCode.text;
     }
+    
+    
     
 }
 

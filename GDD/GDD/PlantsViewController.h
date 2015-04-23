@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TableViewCell.h"
-//#import <CoreLocation/CoreLocation.h>
 @interface PlantsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) NSInteger startUnix;
 @property (nonatomic) NSInteger endUnix;
 @property (nonatomic) double lat;
 @property (nonatomic) double lon;
-//@property (copy, nonatomic) NSString *zip;
-//@property (strong, nonatomic) CLGeocoder *geocoder;
 @end

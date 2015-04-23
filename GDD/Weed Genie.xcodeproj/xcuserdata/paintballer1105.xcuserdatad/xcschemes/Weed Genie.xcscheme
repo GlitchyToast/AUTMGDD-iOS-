@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "838F55011A78144600BA469C"
-               BuildableName = "GDD.app"
-               BlueprintName = "GDD"
-               ReferencedContainer = "container:GDD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "838F551A1A78144700BA469C"
-               BuildableName = "GDDTests.xctest"
-               BlueprintName = "GDDTests"
-               ReferencedContainer = "container:GDD.xcodeproj">
+               BuildableName = "Weed Genie.app"
+               BlueprintName = "Weed Genie"
+               ReferencedContainer = "container:Weed Genie.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "838F551A1A78144700BA469C"
-               BuildableName = "GDDTests.xctest"
-               BlueprintName = "GDDTests"
-               ReferencedContainer = "container:GDD.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "838F55011A78144600BA469C"
-            BuildableName = "GDD.app"
-            BlueprintName = "GDD"
-            ReferencedContainer = "container:GDD.xcodeproj">
+            BuildableName = "Weed Genie.app"
+            BlueprintName = "Weed Genie"
+            ReferencedContainer = "container:Weed Genie.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,13 +48,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "838F55011A78144600BA469C"
-            BuildableName = "GDD.app"
-            BlueprintName = "GDD"
-            ReferencedContainer = "container:GDD.xcodeproj">
+            BuildableName = "Weed Genie.app"
+            BlueprintName = "Weed Genie"
+            ReferencedContainer = "container:Weed Genie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -90,13 +67,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "838F55011A78144600BA469C"
-            BuildableName = "GDD.app"
-            BlueprintName = "GDD"
-            ReferencedContainer = "container:GDD.xcodeproj">
+            BuildableName = "Weed Genie.app"
+            BlueprintName = "Weed Genie"
+            ReferencedContainer = "container:Weed Genie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

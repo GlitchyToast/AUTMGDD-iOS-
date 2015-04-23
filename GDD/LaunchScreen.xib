@@ -16,29 +16,56 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    </variation>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GDD" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weed Genie" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
                     <rect key="frame" x="20" y="140" width="441" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="GsR-sA-hce">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone1536x2048.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6b-VV-Ohe">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
+                <constraint firstItem="P6b-VV-Ohe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1al-93-WtG"/>
+                <constraint firstItem="P6b-VV-Ohe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2ya-ZY-soE"/>
+                <constraint firstAttribute="bottom" secondItem="P6b-VV-Ohe" secondAttribute="bottom" id="DQ4-e4-i7s"/>
+                <constraint firstAttribute="trailing" secondItem="P6b-VV-Ohe" secondAttribute="trailing" id="IMR-lf-p2I"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="Kid-kn-2rF"/>
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
+                <constraint firstItem="P6b-VV-Ohe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LT2-pf-kvj"/>
+                <constraint firstAttribute="bottom" secondItem="P6b-VV-Ohe" secondAttribute="bottom" id="LZq-QN-Dns"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstItem="P6b-VV-Ohe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U5P-TN-hyc"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstAttribute="trailing" secondItem="P6b-VV-Ohe" secondAttribute="trailing" id="bYU-Re-9nY"/>
+                <constraint firstItem="P6b-VV-Ohe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cLp-Xr-gld"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstAttribute="bottom" secondItem="P6b-VV-Ohe" secondAttribute="bottom" id="q0e-gi-qlg"/>
+                <constraint firstAttribute="trailing" secondItem="P6b-VV-Ohe" secondAttribute="trailing" id="tym-v5-rzY"/>
+                <constraint firstItem="P6b-VV-Ohe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yZH-Xc-4yw"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="548" y="455"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1al-93-WtG"/>
+                    <exclude reference="IMR-lf-p2I"/>
+                    <exclude reference="LT2-pf-kvj"/>
+                    <exclude reference="LZq-QN-Dns"/>
+                    <exclude reference="U5P-TN-hyc"/>
+                    <exclude reference="cLp-Xr-gld"/>
+                    <exclude reference="q0e-gi-qlg"/>
+                    <exclude reference="tym-v5-rzY"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="404" y="445"/>
         </view>
     </objects>
     <resources>
