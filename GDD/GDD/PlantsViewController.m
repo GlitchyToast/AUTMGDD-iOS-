@@ -11,7 +11,7 @@
 #import "PlantGraphViewController.h"
 
 static NSString *simpleTableIdentifier = @"CellTableIdentifier";
-static NSString *serverAddress = @"https://api.forecast.io/forecast/331224fc1ce6b64e7cf56e15164bcf33/";
+static NSString *serverAddress = @"https://api.forecast.io/forecast/feae2be941ef3a658195cb8356696650/";
 static NSString *params = @"?units=si&exclude=[currently,minutely,hourly,alerts,flags]";
 static NSInteger secondsPerDay = 86400;
 static CGFloat customTableCellHeight = 60;
@@ -92,8 +92,6 @@ static CGFloat customTableCellHeight = 60;
     {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
-        //cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-          //                     reuseIdentifier:simpleTableIdentifier];
     }
     
     cell.plantLabel.text = self.plants[indexPath.row];
@@ -287,23 +285,6 @@ static CGFloat customTableCellHeight = 60;
     return plistData;
 }
 
-- (void) addToGDDPerDay: (int) count :(int) locatation :(NSNumber*) gdd {
-    if (count == 0) {
-        if (gdd.doubleValue > 0) {
-            
-        }
-            
-        else {
-                
-        }
-    }
-    else {
-        if (gdd.doubleValue > 0) {
-            
-        }
-    }
-}
-
 
 - (void) addAverageTempToDict: (double) average :(long) start{
     [self.averageTemps setObject:[NSNumber numberWithDouble:average] forKey:[NSString stringWithFormat:@"%ld", start]];
@@ -324,6 +305,7 @@ static CGFloat customTableCellHeight = 60;
 
     TableViewCell *selectedCell= (TableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     self.plantNameToPass = [[selectedCell plantLabel] text];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self performSegueWithIdentifier:@"toGraph" sender:self];
 }
 

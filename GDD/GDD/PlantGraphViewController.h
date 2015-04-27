@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "CorePlot-CocoaTouch.h"
 
+
 @interface PlantGraphViewController : UIViewController <CPTPlotDataSource>
-//@property (retain, nonatomic) NSMutableArray *gddPerPlant;
 @property (copy, nonatomic) NSArray *plants;
 @property (copy, nonatomic) NSArray *startValues;
 @property (copy, nonatomic) NSArray *peakValues;

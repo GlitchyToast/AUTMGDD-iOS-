@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-sp-lRL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-sp-lRL">
                                 <rect key="frame" x="89" y="269" width="142" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -28,8 +28,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAd-M2-kWd">
-                                <rect key="frame" x="92" y="314" width="136" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAd-M2-kWd">
+                                <rect key="frame" x="92" y="333" width="136" height="30"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,15 +37,33 @@
                                     <action selector="getLatLong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="all-Fd-Ywf"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nQ-24-M4Z">
+                                <rect key="frame" x="217" y="393" width="51" height="31"/>
+                                <connections>
+                                    <action selector="saveZipCode:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bpv-qR-1Km"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save zip code?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdP-qS-3yE">
+                                <rect key="frame" x="55" y="398" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fhn-sp-lRL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="205" id="4oK-HK-5Fp"/>
                             <constraint firstItem="H0n-aH-H55" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="7Xq-Ak-Xbm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H0n-aH-H55" secondAttribute="trailing" constant="38" id="Cnb-rQ-KwA"/>
-                            <constraint firstItem="wAd-M2-kWd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="76" id="D1S-vz-l15"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fhn-sp-lRL" secondAttribute="trailing" constant="73" id="GCd-F1-QxF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wAd-M2-kWd" secondAttribute="trailing" constant="76" id="Kce-jV-pU7"/>
+                            <constraint firstItem="cdP-qS-3yE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="IQT-1N-8DY"/>
+                            <constraint firstItem="cdP-qS-3yE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="334" id="Rtc-Jg-sbF"/>
+                            <constraint firstItem="wAd-M2-kWd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="76" id="YJo-ke-OWn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3nQ-24-M4Z" secondAttribute="trailing" constant="38" id="a1S-1h-nk3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wAd-M2-kWd" secondAttribute="trailing" constant="76" id="h5v-SG-b5e"/>
+                            <constraint firstItem="wAd-M2-kWd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="269" id="oPK-6w-BfX"/>
                             <constraint firstItem="H0n-aH-H55" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="p2r-j6-sfm"/>
+                            <constraint firstItem="3nQ-24-M4Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="329" id="qa8-oE-Fzk"/>
                             <constraint firstItem="fhn-sp-lRL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="73" id="u65-nR-s3J"/>
                         </constraints>
                     </view>
@@ -53,6 +71,7 @@
                     <connections>
                         <outlet property="submitZip" destination="wAd-M2-kWd" id="rYY-10-hW1"/>
                         <outlet property="zipCode" destination="fhn-sp-lRL" id="FKz-eF-08o"/>
+                        <outlet property="zipCodeSwitch" destination="3nQ-24-M4Z" id="kbh-KK-cYp"/>
                         <segue destination="xNR-gi-uGh" kind="push" identifier="toDate" id="Ms9-hg-bEN"/>
                     </connections>
                 </viewController>
@@ -60,48 +79,10 @@
             </objects>
             <point key="canvasLocation" x="752" y="319"/>
         </scene>
-        <!--Plants View Controller-->
-        <scene sceneID="dHa-zB-Id2">
-            <objects>
-                <viewController id="pEM-pt-RXv" customClass="PlantsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Msc-ub-ZXo"/>
-                        <viewControllerLayoutGuide type="bottom" id="mzQ-5d-1cr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nZ0-ir-SSz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Plants to Calculate Weed Genie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXA-Au-gc7">
-                                <rect key="frame" x="16" y="20" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8Nt-2m-J1M">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="pEM-pt-RXv" id="I03-pn-cW6"/>
-                                    <outlet property="delegate" destination="pEM-pt-RXv" id="cue-Xx-jHs"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="pUE-ae-1nT"/>
-                    <connections>
-                        <segue destination="WDs-7R-kUL" kind="push" identifier="toGraph" id="5nt-qb-vzJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lwj-X3-pwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1578" y="319"/>
-        </scene>
-        <!--Item 2-->
+        <!--Plants Tracking-->
         <scene sceneID="xjU-tx-IuG">
             <objects>
-                <viewController id="RKE-eD-ePI" sceneMemberID="viewController">
+                <viewController id="RKE-eD-ePI" customClass="SaveCellsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w2W-hX-TaX"/>
                         <viewControllerLayoutGuide type="bottom" id="toI-bs-iDk"/>
@@ -109,18 +90,34 @@
                     <view key="view" contentMode="scaleToFill" id="V9Y-NO-yby">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9wz-pq-usr">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RKE-eD-ePI" id="MFp-G6-buw"/>
+                                    <outlet property="delegate" destination="RKE-eD-ePI" id="t6i-C4-oOC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="toI-bs-iDk" firstAttribute="top" secondItem="9wz-pq-usr" secondAttribute="bottom" id="muR-qm-lJq"/>
+                            <constraint firstItem="9wz-pq-usr" firstAttribute="top" secondItem="w2W-hX-TaX" secondAttribute="bottom" id="ocv-Ai-uIr"/>
+                            <constraint firstItem="9wz-pq-usr" firstAttribute="leading" secondItem="V9Y-NO-yby" secondAttribute="leadingMargin" constant="-16" id="pKL-LJ-Ewp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9wz-pq-usr" secondAttribute="trailing" constant="-16" id="yof-5H-vII"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="rih-y3-MOZ"/>
+                    <tabBarItem key="tabBarItem" title="Plants Tracking" image="GrassIcon22x22.png" id="rih-y3-MOZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kq4-Bx-lzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904" y="1625"/>
+            <point key="canvasLocation" x="1562" y="1007"/>
         </scene>
-        <!--Item 1-->
+        <!--Plants-->
         <scene sceneID="enB-ng-eNZ">
             <objects>
-                <viewController id="xf9-AS-bTH" sceneMemberID="viewController">
+                <viewController id="xf9-AS-bTH" customClass="PlantsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tUf-Yl-Muo"/>
                         <viewControllerLayoutGuide type="bottom" id="WeM-Vw-q1Q"/>
@@ -128,18 +125,38 @@
                     <view key="view" contentMode="scaleToFill" id="5Cx-5M-qDs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="amu-zC-kgX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xf9-AS-bTH" id="v3P-9t-Lqm"/>
+                                    <outlet property="delegate" destination="xf9-AS-bTH" id="1La-z6-S1q"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="amu-zC-kgX" firstAttribute="top" secondItem="5Cx-5M-qDs" secondAttribute="topMargin" id="Tb4-dC-vMo"/>
+                            <constraint firstItem="WeM-Vw-q1Q" firstAttribute="top" secondItem="amu-zC-kgX" secondAttribute="bottom" id="VQK-lm-hQ2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="amu-zC-kgX" secondAttribute="trailing" constant="-16" id="afa-zX-GtV"/>
+                            <constraint firstItem="amu-zC-kgX" firstAttribute="leading" secondItem="5Cx-5M-qDs" secondAttribute="leadingMargin" constant="-16" id="bsx-1B-f2h"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="vaq-cO-Nvr"/>
+                    <tabBarItem key="tabBarItem" title="Plants" image="iPhone22x22.png" id="vaq-cO-Nvr"/>
+                    <connections>
+                        <segue destination="WDs-7R-kUL" kind="push" identifier="toGraph" id="h1W-NZ-XoH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToH-fU-cRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904" y="994"/>
+            <point key="canvasLocation" x="2045" y="319"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3ZC-C4-0vM">
             <objects>
                 <tabBarController id="7Wf-hK-aew" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="U4y-hr-obR"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="b5r-od-lrJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -153,7 +170,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kyl-tU-Gl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="1306"/>
+            <point key="canvasLocation" x="1562" y="319"/>
         </scene>
         <!--Plant Graph View Controller-->
         <scene sceneID="9vK-SG-pjq">
@@ -172,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGg-X7-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037" y="-397"/>
+            <point key="canvasLocation" x="2467" y="319"/>
         </scene>
         <!--Date View Controller-->
         <scene sceneID="8Y8-hy-805">
@@ -210,7 +227,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pEM-pt-RXv" kind="push" identifier="toPlantCells" id="4XB-Xv-kNU"/>
+                                    <segue destination="7Wf-hK-aew" kind="push" identifier="toPlantTab" id="TKc-tJ-OP8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3L-tg-efl">
@@ -273,6 +290,10 @@
             <point key="canvasLocation" x="220" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GrassIcon22x22.png" width="22" height="22"/>
+        <image name="iPhone22x22.png" width="22" height="22"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
